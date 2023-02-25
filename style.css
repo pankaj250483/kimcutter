@@ -58,6 +58,7 @@ img
 {
     border: 2px solid transparent !important;
     transition: transform 2s;
+    transition-delay: 1s;
 }
 img:hover
 {
