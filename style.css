@@ -53,3 +53,15 @@
     background-color: rgba(0,0,0,0.5);
     min-height: 700px !important;
 }
+
+img
+{
+    border: 2px solid transparent !important;
+    transition: transform 2s;
+}
+img:hover
+{
+    border: 4px dotted goldenrod !important;
+    transform: scale(1.7);
+    cursor: zoom-in !important;
+}
