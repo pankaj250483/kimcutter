@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Pin & Zoom Images On Scroll Using GSAP Example</title>
+  <link href="https://www.cssscript.com/demo/sticky.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<div class="section section--gradient">
+	<h1>Pin & Zoom Images On Scroll Using GSAP Example</h1>
+<div style="margin:2rem auto;"><div id="carbon-block"></div>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2783044520727903"
+     crossorigin="anonymous"></script>
+<!-- CSSScript Demo Page -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-2783044520727903"
+     data-ad-slot="3025259193"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+	<p>A tiny JavaScript snippet that pins and zooms images while scrolling. Based on the GSAP Animation library and its ScrollTrigger plugin.</p>
+</div>
+<div class="pinned-image">
+	<div class="pinned-image__container">
+		<img src='https://images.unsplash.com/photo-1656862368408-420072672a5c?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTk1MTc0MTM&ixlib=rb-1.2.1&q=80' alt=''>
+		<div class="pinned-image__container-overlay"></div>
+	</div>
+	<figure class="pinned-image__quote">
+		<blockquote>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati recusandae ipsum quos aut facilis consectetur incidunt libero dignissimos reprehenderit laudantium, praesentium cumque accusantium alias est! Consequuntur dolorum obcaecati facilis sed!</p>
+		</blockquote>
+		<figcaption>
+			<span class="pinned-image__quote-author">Kenneth Adams</span>
+			<span class="pinned-image__quote-role">Chief Creative Officer</span>
+		</figcaption>
+	</figure>
+	<div class="pinned-image__overlay"></div>
+</div>
+<div class="pinned-image">
+	<div class="pinned-image__container">
+		<img src='https://images.unsplash.com/photo-1657735794340-b1ee5512ee89?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTk1MjIzMjY&ixlib=rb-1.2.1&q=80' alt=''>
+		<div class="pinned-image__container-overlay pinned-image__container-overlay--gradient"></div>
+	</div>
+	<figure class="pinned-image__quote">
+		<blockquote>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto nisi optio pariatur voluptatem fuga ea in quod soluta sapiente? Doloribus dicta tenetur vitae ut fugit dignissimos tempora inventore iusto voluptate.</p>
+		</blockquote>
+		<figcaption>
+			<span class="pinned-image__quote-author">Jenny Richards</span>
+			<span class="pinned-image__quote-role">Chief Operations Officer</span>
+		</figcaption>
+	</figure>
+	<div class="pinned-image__overlay"></div>
+</div>
+<div class="pinned-image pinned-image--light">
+	<div class="pinned-image__container">
+		<img src='https://images.unsplash.com/photo-1659471202280-742f0e0934c1?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTk1Mjg1MDA&ixlib=rb-1.2.1&q=80' alt=''>
+		<div class="pinned-image__container-overlay"></div>
+	</div>
+	<figure class="pinned-image__quote">
+		<blockquote>
+			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi temporibus corrupti eum minima voluptatibus vitae maiores unde veniam iure at numquam recusandae obcaecati, aut laborum? Itaque libero voluptate dolor consequuntur.</p>
+		</blockquote>
+		<figcaption>
+			<span class="pinned-image__quote-author">Beth James</span>
+			<span class="pinned-image__quote-role">Chief Information Officer</span>
+		</figcaption>
+	</figure>
+	<div class="pinned-image__overlay"></div>
+</div>
+<div class="pinned-image pinned-image--small">
+	<div class="pinned-image__container">
+		<img src='https://images.unsplash.com/photo-1565584814378-afccdd671b12?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTk1Mjg3MjI&ixlib=rb-1.2.1&q=80' alt=''>
+		<div class="pinned-image__container-overlay"></div>
+	</div>
+	<figure class="pinned-image__quote">
+		<blockquote>
+			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi temporibus corrupti eum minima voluptatibus vitae maiores unde veniam iure at numquam recusandae obcaecati, aut laborum? Itaque libero voluptate dolor consequuntur.</p>
+		</blockquote>
+		<figcaption>
+			<span class="pinned-image__quote-author">John Balmer</span>
+			<span class="pinned-image__quote-role">Human Resources</span>
+		</figcaption>
+	</figure>
+	<div class="pinned-image__overlay"></div>
+</div>
+<div class="pinned-image">
+	<div class="pinned-image__container">
+		<img src='https://images.unsplash.com/photo-1549153052-247abe00d6d9?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTk1Mjg4NzI&ixlib=rb-1.2.1&q=80' alt=''>
+		<div class="pinned-image__container-overlay pinned-image__container-overlay--gradient"></div>
+	</div>
+	<figure class="pinned-image__quote">
+		<blockquote>
+			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic perferendis adipisci eligendi eos et! Eligendi quae similique nostrum dolorem ipsum!</p>
+		</blockquote>
+		<figcaption>
+			<span class="pinned-image__quote-author">Geofrey Finnigan</span>
+			<span class="pinned-image__quote-role">Assistant to the manager</span>
+		</figcaption>
+	</figure>
+	<div class="pinned-image__overlay"></div>
+</div>
+  <script src='https://unpkg.co/gsap@3/dist/gsap.min.js'></script>
+<script src='https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js'></script>
+<script  src="./script.js"></script>
+<script>
+try {
+  fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: 'HEAD', mode: 'no-cors' })).then(function(response) {
+    return true;
+  }).catch(function(e) {
+    var carbonScript = document.createElement("script");
+    carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CE7DC2JW&placement=wwwcssscriptcom";
+    carbonScript.id = "_carbonads_js";
+    document.getElementById("carbon-block").appendChild(carbonScript);
+  });
+} catch (error) {
+  console.log(error);
+}
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LLWL5N9CSM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-LLWL5N9CSM');
+</script>
+</body>
+</html>

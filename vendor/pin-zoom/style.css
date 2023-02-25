@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css?family=Lora:300,300i,400,400i,700");
+body {
+  font-family: Lora, sans-serif;
+}
+
+.section {
+  align-items: center;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+}
+.section--offwhite {
+  background: #FBFBFB;
+}
+.section--gradient {
+  background: #7cf1ec;
+  background: linear-gradient(90deg, #7cf1ec 0%, #62ffd8 100%);
+}
+.section h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 75px;
+}
+.section p {
+  color: #535353;
+  font-size: 26px;
+  line-height: 1.6;
+  max-width: 900px;
+}
+
+.pinned-image {
+  color: white;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.pinned-image--small {
+  height: 65vh;
+}
+.pinned-image--light {
+  color: #19192a;
+}
+.pinned-image--light .pinned-image__container-overlay {
+  background: rgba(255, 255, 255, 0.5);
+}
+.pinned-image__container {
+  padding-top: 58%;
+  position: relative;
+  transform: scale(0.75);
+  width: 100%;
+}
+.pinned-image__container-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.pinned-image__container-overlay--gradient {
+  background: rgba(206, 112, 222, 0.7);
+  background: linear-gradient(90deg, #ce70de 0%, rgba(255, 98, 141, 0.7) 100%);
+}
+.pinned-image__container img {
+  height: 100%;
+  left: 0;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.pinned-image__quote {
+  font-weight: 300;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+.pinned-image__quote blockquote {
+  margin-bottom: 75px;
+}
+.pinned-image__quote blockquote p {
+  font-size: 26px;
+  font-style: italic;
+  line-height: 1.6;
+  max-width: 800px;
+}
+.pinned-image__quote blockquote p:before {
+  content: .pinned-image__quote blockquote p:before ldquo;
+}
+.pinned-image__quote blockquote p:after {
+  content: .pinned-image__quote blockquote p:after rdquo;
+}
+.pinned-image__quote-author {
+  font-size: 32px;
+  font-weight: 700;
+}
+.pinned-image__quote-role {
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-left: 20px;
+  text-transform: uppercase;
+}
