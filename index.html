@@ -10,7 +10,7 @@
 </head>
 
 <body class="bg-dark">
-
+ 
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand" href="index.html">Film Hair Stylist</a>
@@ -44,14 +44,14 @@
                 <p>I love and respect the beauty industry and those that have paved the way for me and many others;
                     therefore, I have and continue to learn and train hard to continue providing professional quality,
                     competent services. I am thankful to have the opportunity to bring art to life.</p>
-                <div class="row">
+                <div class="row mb-5">
                     <div class="col-md-6">
-                        <p>I will happy to hear you.</p>
+                        <p>I’d be happy to hear from you</p>
                         <p><i class="bi bi-telephone"></i> +1 (912) 401-8774</p>
                         <p><i class="bi bi-envelope"></i> <a href="mailto:kymcutter@yahoo.com">kymcutter@yahoo.com</a>
                         </p>
                     </div>
-                    <div class="col-md-6 text-end">
+                    <div class="col-md-6 mb-5 text-end">
                         <a href="portfolio.html" class="btn btn-primary mt-3"> Portfolio of Work </a>
                     </div>
                 </div>
@@ -59,6 +59,26 @@
 
         </div>
     </div>
+   
+    <div class="pinned-image" ng-controller="domainCtrl">
+        <div class="pinned-image__container">
+          <img src='images/bg-1.jpg' alt='Image 1'>
+          <div class="pinned-image__container-overlay text-center rev py-5">
+            <div class="row justify-content-center">
+              <div class="col-md-7 justify-content-center">
+              <h1 class="m-5" data-aos="fade-up">PANKAJ OJHA</h1>
+              <h4 class="m-5">PANKAJ OJHA</h4>
+              <input class="w-50 d-block form-control m-auto" placeholder="{{domain.heading2[lang]}}">
+              <a href="#" class="btn shadow rounded btn-warning my-5 p-2 px-5 bdr-dark ">{{domain.button[lang]}}</a>
+              <h1 class="f-o">.ch .com .net .biz .eu .de .fr .it</h1>
+              <p>{{domain.p[1][lang]}}</p>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="pinned-image__overlay"></div>
+      </div>
+
 
     <script src="vendor/humble/humbleScroll.js" defer></script>
     <script src="vendor/humble/main.js" defer></script>

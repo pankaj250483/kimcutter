@@ -60,13 +60,78 @@ img
     transition: transform 2s;
     transition-delay: 1s;
 }
-img:hover
+
+.main-icon
 {
-    border: 4px dotted goldenrod !important;
-    transform: scale(1.7);
-    cursor: zoom-in !important;
+  font-size:100px !important;
+  color:deeppink;
 }
 
+.nav-icon
+{
+  font-size:20px !important;
+
+}
+
+
+h1
+{
+  color:deeppink;
+}
+
+.zoom-out 
+{
+  position: relative;
+  animation-name: zm-out;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes zm-out 
+{
+  0%   {transform: scale(1);}
+  50%  {transform: scale(0.75);}
+  100% {transform: scale(1);}
+}
+
+
+
+
+.pinned-image {
+    color: white;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .pinned-image__container {
+    padding-top: 58%;
+    position: relative;
+    transform: scale(0.75);
+    width: 100%;
+  }
+  .pinned-image__container-overlay {
+    background: rgba(0, 0, 0, 0.6);
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .pinned-image__container-overlay--gradient {
+    background: rgba(206, 112, 222, 0.7);
+    background: linear-gradient(90deg, #ce70de 0%, rgba(255, 98, 141, 0.7) 100%);
+  }
+  .pinned-image__container img {
+    height: 100%;
+    left: 0;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
 
 @media only screen and (max-width: 900px) {
     .bg2
@@ -75,3 +140,12 @@ img:hover
 
     }   
   }
+
+
+@media only screen and (min-width: 600px) 
+{
+    img:hover
+    {
+        border: 4px dotted goldenrod !important;
+    }
+  }  
